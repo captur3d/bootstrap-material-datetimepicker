@@ -218,16 +218,17 @@
 		{
 			$('#date').bootstrapMaterialDatePicker
 			({
-				time: false,
-				clearButton: true
-			});
+		      weekStart : 0, 
+		      time: false, 
+		      format: 'YYYY MMMM D'
+		    });
 
 			$('#time').bootstrapMaterialDatePicker
 			({
-				date: false,
-				shortTime: false,
-				format: 'HH:mm'
-			});
+		      date: false, 
+		      format: 'HH:mm', 
+		      shortTime: true
+		    });
 
 			$('#date-format').bootstrapMaterialDatePicker
 			({
